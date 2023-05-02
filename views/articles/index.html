@@ -1,0 +1,5 @@
+{% for article in articles %}
+<h2>{{ article.title }}</h2>
+<p>{{ article.content }}</p>
+{% endfor %}
+<a href="{{ url_for('articles.new') }}">Add new article</a>
